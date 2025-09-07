@@ -1,0 +1,81 @@
+ 1. Function และ Arguments
+การใช้ arguments และ rest parameter (...a)
+arguments คือ object-like ที่เก็บค่าที่ส่งเข้ามาใน function
+...a คือการเก็บ argument ทั้งหมดเป็น array จริง ๆ → ใช้งานง่ายกว่า
+for loop สามารถวนอ่านค่าที่ส่งมาได้
+
+ทำให้เข้าใจความต่างระหว่าง arguments vs rest parameter
+
+2. Higher-order function
+FunctionMain(func) → รับ function เป็น parameter แล้วเอาไปเรียกต่อ
+Arrow function (e) => e*e → ใช้ง่าย และกระชับ
+เข้าใจว่า ฟังก์ชันก็เป็นค่าหนึ่ง ที่ส่งต่อหรือนำไปประมวลผลได้
+
+3. การซ้อนฟังก์ชัน
+ฟังก์ชัน multiply เรียกใช้ plus ภายใน
+สอนให้เห็นว่า แยกฟังก์ชันย่อย ๆ เพื่อ reuse ได้
+
+ 4. Object & Prototype
+Object.create(ob) → ใช้สร้าง object ใหม่ที่มี prototype เป็น object ที่กำหนด
+การเขียน object ด้วย literal ({}) และการเพิ่ม property ภายหลัง
+เข้าใจว่า object มี prototype chain และการสืบทอด property
+
+5. การเปรียบเทียบ object
+การเปรียบเทียบด้วย === → เทียบ reference ไม่ใช่ค่า
+ถ้าอยากเปรียบเทียบค่า ต้องเขียนฟังก์ชัน เช่น compareStudent(obj1, obj2)
+
+6. Class และ Inheritance
+class Device → class พื้นฐาน
+class Laptop extends Device และ class Phone extends Device → การสืบทอด
+super(...) ใช้เรียก constructor ของ parent
+Method overriding และการเพิ่ม method ใหม่ (showBattery, takePhoto)
+เข้าใจ OOP (Object-Oriented Programming) พื้นฐานใน JavaScript
+
+ 7. Virtual Machine Example
+Computer สืบทอดจาก Machine
+VM สืบทอดจาก Machine และ ใช้ disk จาก host
+เช็คเงื่อนไขถ้า disk ไม่พอ → throw Error
+เรียนรู้ การจำลองการจัดการ resource + การใช้ throw error
+
+8. Array Methods
+map → แปลงค่าทุก element ใน array
+filter → เลือกเฉพาะ element ที่ตรงเงื่อนไข
+reduce → สะสมค่า เช่น sum, total
+forEach → loop ผ่านทุก element
+sort → จัดเรียง array (custom comparator)
+slice → copy ช่วงของ array โดยไม่แก้ของเดิม
+splice → เพิ่ม/ลบ/แทนค่าใน array (แก้ของเดิม)
+push / pop / shift / unshift → การเพิ่ม/ลบจากหัวท้าย
+fill → เติมค่าใน array
+ได้เรียนรู้เครื่องมือหลัก ๆ ของ Array ใน JS อย่างครบถ้วน
+
+9. String Methods
+startsWith('a') → ตรวจสอบว่าขึ้นต้นด้วยตัวอักษรที่กำหนด
+includes("jai") → ตรวจสอบว่ามี substring อยู่หรือไม่
+.toUpperCase() / .toLowerCase() → แปลงตัวพิมพ์
+
+10. การจัดการข้อมูล Object Array
+map เพื่อดึง firstname lastname ออกมาเป็น string
+filter + map ใช้ต่อกัน → เลือกและปรับรูปข้อมูลในขั้นตอนเดียว
+นี่คือ Functional Programming Style ที่ทำให้โค้ดสั้นและชัดเจน
+
+11. Sort ข้อมูล Object
+localeCompare ใช้เรียง string ตามภาษา → แก้ปัญหาเรื่องตัวเล็ก/ใหญ่
+sort((a,b)=>a-b) ใช้เรียงตัวเลข ascending
+sort((a,b)=>b-a) ใช้เรียง descending
+
+12. Module System (ESM)
+import getLength, { echo, GPAAverage, BookManegement } from "./libs/utilities.js"
+default export (getLength)
+named export (echo, GPAAverage, BookManegement)
+ได้เรียนรู้ การแยกโค้ดออกเป็นโมดูล เพื่อ reuse
+ฟังก์ชัน (arguments, rest parameter, higher-order function)
+Object & Prototype
+Class & Inheritance (OOP)
+Error handling (throw)
+Array Methods ครบถ้วน (map, filter, reduce, sort, slice, splice, push/pop/shift/unshift, fill)
+String Methods (startsWith, includes, toUpperCase, toLowerCase)
+การจัดการข้อมูล Array of Objects
+Module System (import/export)
+
+

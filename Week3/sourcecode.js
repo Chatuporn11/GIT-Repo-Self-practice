@@ -1,3 +1,4 @@
+//1.
 function Sum(...a){
     let answer = 0
     for(i = 1; i < arguments.length; i++){
@@ -10,12 +11,12 @@ console.log(Sum())
 console.log(Sum(1))
 console.log(Sum(1,2))
 
-
+//2.
 const FunctionMain = (func) =>{
     return func(2)
 }
 console.log(FunctionMain(func=(e)=>e*e))
-
+//3.
 function plus(num1,num2) {
     return num1 + num2
        
@@ -26,7 +27,7 @@ function multiply(num1,num2) {
 }
 console.log(multiply(5,4))
 
-
+//4.
 const getFerqOfWords = (sentence) =>{
     if (sentence === null || sentence === undefined) {
         return undefined;

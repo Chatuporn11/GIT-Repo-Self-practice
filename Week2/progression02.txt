@@ -1,0 +1,9 @@
+Object.create() ใช้สร้าง object ที่มี prototype เชื่อมโยงกับ object อื่น
+
+ฟังก์ชัน compareStudent ใช้เทียบ object โดยดูค่า ไม่ใช่การอ้างอิง
+
+class และ extends ใช้สืบทอดคุณสมบัติ (inheritance)
+
+สามารถเพิ่ม method เฉพาะของ subclass ได้ (showBattery, takePhoto)
+
+การจัดการ resource (disk) ใน VM + Computer แสดงให้เห็น composition และการตรวจสอบก่อนสร้าง instance
